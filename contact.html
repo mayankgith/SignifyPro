@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signage Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body onload="myFunction()">
+    <header>
+        <h2>SignifyPro</h2>
+        
+        <i class="fas fa-bars" id="bars"  onclick="shownavbar()"></i>
+        <i class="fa fa-times" id="close" onclick="hidenavbar()"></i>
+        <ul class="nav_container">
+            <li class="nav_items"><a class="nav_list_items" href="index.html">HOME</a></li>
+            <li class="nav_items"><a class="nav_list_items" href="services.html">SERVICES</a></li>
+            <li class="nav_items"><a class="nav_list_items" href="about.html">ABOUT</a></li>
+            <li class="nav_items"><a class="nav_list_items" href="#">CONTACT</a></li>
+        </ul>
+        <button href="#" class="banner-button learn_more_btn">Learn More</button>
+    </header>
+    <main>
+        <div class="contact_hero">
+        </div>
+
+        <section id="contact_us">
+            <div class="contact-container" data-aos="fade">
+                <h1>Contact Us</h1>
+                <div class="contact-form">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+        
+                    <button type="submit" onclick="SendMail()">Send Message</button>
+                </div>
+            
+            </div>
+
+            <div class="map_container" data-aos="fade">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2192354493995!2d77.5945804706538!3d12.957818587261567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15d04b34dd03%3A0x43166b25e950d1d!2s456%2C%20Bheemanna%20Garden%2C%20Lakshmiamma%20Garden%2C%20Shanti%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001!5e0!3m2!1sen!2sin!4v1727170102774!5m2!1sen!2sin" width="500" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            
+        </section>
+        <div class="contact-info" data-aos="fade">
+            <h3>Our Contact Details</h3>
+            <p><strong>Email:</strong> info@signifypro.com</p>
+            <p><strong>Phone:</strong>+91-9876543210</p>
+            <p><strong>Address:</strong>456, Shanti Nagar, MG Road, Bengaluru, Karnataka - 560001</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>
+                    We are a leading signage solution provider, offering high-quality, custom-designed signage for businesses of all sizes. Our mission is to help brands create a strong presence with innovative and eye-catching signage solutions.
+                </p>
+            </div>
+            
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><strong>Address:</strong> 456, Shanti Nagar, MG Road, Bengaluru, Karnataka - 560001</p>
+                <p><strong>Phone:</strong> +91-9876543210</p>
+                <p><strong>Email:</strong> info@yourcompany.com</p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <p>Stay connected with us on social media:</p>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 SignifyPro. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        var preloader = document.getElementById("loading");
+function myFunction(){
+    preloader.style.display = 'none';
+}
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()({
+      offset: 320,
+      duration: 3000
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signage Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body onload="myFunction()">
+    <header>
+        <h2>SignifyPro</h2>
+        
+        <i class="fas fa-bars" id="bars"  onclick="shownavbar()"></i>
+        <i class="fa fa-times" id="close" onclick="hidenavbar()"></i>
+        <ul class="nav_container">
+            <li class="nav_items"><a class="nav_list_items" href="index.html">HOME</a></li>
+            <li class="nav_items"><a class="nav_list_items" href="#">SERVICES</a></li>
+            <li class="nav_items"><a class="nav_list_items" href="about.html">ABOUT</a></li>
+            <li class="nav_items"><a class="nav_list_items" href="contact.html">CONTACT</a></li>
+        </ul>
+            <button href="#" class="banner-button learn_more_btn">Learn More</button>
+    </header>
+    <main>
+        <div class="service_hero">
+            <h2>Our Services</h2>
+        </div>
+
+        <section id="services">
+            <p class="service_para">
+                At SignifyPro, we offer a comprehensive range of professional signage solutions to help businesses stand out and communicate their brand message effectively. Our services include custom sign design, fabrication, installation, and maintenance, ensuring that your signage is not only eye-catching but also durable and long-lasting. We specialize in LED signs, 3D lettering, vinyl banners, digital displays, and more, tailored to meet your unique branding needs. Our expert team works closely with you from concept to completion, delivering high-quality products that enhance your brand's visibility. Whether you need indoor or outdoor signage, we are committed to providing solutions that make a lasting impression on your audience. Let us be your partner in building a strong brand presence.
+            </p>
+            <hr>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Digital Signage</h3>
+                    <img src="https://img.freepik.com/premium-photo/display-new-building-has-picture-city-it_1309173-23966.jpg?uid=R45245478&ga=GA1.1.1281860228.1721425226&semt=ais_hybrid" alt="Digital Signage">
+                    <p>We offer dynamic digital signage solutions for modern advertising. Our digital displays are designed to captivate and engage your audience effectively.</p>
+                </div>
+                <div class="service-card">
+                    <h3>LED Displays</h3>
+                    <img src="https://img.freepik.com/premium-photo/billboard-neon-style-urban-wall-mockup_148840-8555.jpg?uid=R45245478&ga=GA1.1.1281860228.1721425226&semt=ais_hybrid" alt="LED Displays">
+                    <p>Our energy-efficient LED displays provide vibrant, high-resolution visuals, making them ideal for both indoor and outdoor applications.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Outdoor Advertising</h3>
+                    <img src="https://img.freepik.com/free-psd/outdoor-billboard-city_15879-108.jpg?uid=R45245478&ga=GA1.1.1281860228.1721425226&semt=ais_hybrid" alt="Outdoor Advertising">
+                    <p>Our outdoor advertising solutions are designed to withstand the elements while delivering your message in a visually striking manner.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Custom Sign Boards</h3>
+                    <img src="https://img.freepik.com/premium-photo/old-blank-empty-wooden-signboard-clip_834604-7751.jpg?uid=R45245478&ga=GA1.1.1281860228.1721425226&semt=ais_hybrid" alt="Custom Sign Boards">
+                    <p>We create personalized signboards tailored to your brand's identity, ensuring your message stands out in any environment.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Wayfinding Solutions</h3>
+                    <img src="https://img.freepik.com/premium-photo/sign-with-arrows-pointing-different-directions_806553-6334.jpg?uid=R45245478&ga=GA1.1.1281860228.1721425226&semt=ais_hybrid" alt="Wayfinding Solutions">
+                    <p>Our wayfinding signs are designed to provide clear and effective guidance, helping visitors navigate your premises effortlessly.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Interior Signage</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFfoWGuvsr7IpXHSsUHHcuQnoaPcSxt9iDMg&s" alt="Interior Signage">
+                    <p>Stylish and informative interior signs to guide customers and enhance the ambiance of your space, from directional signs to promotional displays.</p>
+                </div>  
+            </div>
+        </section>
+
+        <section class="why-choose-us">
+            <h2>Why Choose Us?</h2>
+            <div class="choose-us-cards">
+                <div class="card" data-aos="zoom-in">
+                    <h3>Quality Craftsmanship</h3>
+                    <p>Our skilled team delivers top-notch signage solutions with attention to detail.</p>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <h3>Expert Installation</h3>
+                    <p>We ensure your signs are installed safely and effectively.</p>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <h3>Customized Solutions</h3>
+                    <p>We tailor every sign to match your brand's vision and requirements.</p>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <h3>Affordable Pricing</h3>
+                    <p>Get the best value for your investment with our competitive pricing.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>
+                    We are a leading signage solution provider, offering high-quality, custom-designed signage for businesses of all sizes. Our mission is to help brands create a strong presence with innovative and eye-catching signage solutions.
+                </p>
+            </div>
+            
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><strong>Address:</strong> 456, Shanti Nagar, MG Road, Bengaluru, Karnataka - 560001</p>
+                <p><strong>Phone:</strong> +91-9876543210</p>
+                <p><strong>Email:</strong> info@yourcompany.com</p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <p>Stay connected with us on social media:</p>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 SignifyPro. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        var preloader = document.getElementById("loading");
+function myFunction(){
+    preloader.style.display = 'none';
+}
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()({
+      offset: 320,
+      duration: 3000
+    });
+    </script>
+</body>
+</html>

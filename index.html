@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signage Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+</head>
+<body onload="myFunction()">
+    <div id="loading"></div>
+    <header>
+        <h2>SignifyPro</h2>
+        
+        <i class="fas fa-bars" id="bars"  onclick="shownavbar()"></i>
+        <i class="fa fa-times" id="close" onclick="hidenavbar()"></i>
+            <ul class="nav_container">
+                <li class="nav_items"><a class="nav_list_items" href="#">HOME</a></li>
+                <li class="nav_items"><a class="nav_list_items" href="services.html">SERVICES</a></li>
+                <li class="nav_items"><a class="nav_list_items" href="about.html">ABOUT</a></li>
+                <li class="nav_items"><a class="nav_list_items" href="contact.html">CONTACT</a></li>
+            </ul>
+            <button href="#" class="banner-button learn_more_btn">Learn More</button>
+    </header>
+    <main>
+        <div class="hero">
+        <h1>Illuminate Your Brand with Stunning Signage</h1>
+        <p>Transform your business's visibility with eye-catching, high-quality signage solutions. From LED displays to classic shopfront signs, we craft designs that make your brand shine day and night.</p>
+        <button href="#services" class="banner-button">Explore Our Services</button>
+        </div>
+
+        <section class="about-us" data-aos="fade-right">
+    
+            <div class="about-content">
+                <h2>About Us</h2>
+            <p>Our company is committed to delivering top-quality products and services to our valued customers. With a passion for excellence, we have established ourselves as industry leaders.</p>
+                
+                    <p>We are dedicated to ensuring customer satisfaction by providing innovative solutions and personalized experiences. Our team of experts is always ready to assist you in every step of your journey with us.</p>
+                </div>
+
+                <div class="about_img">
+                    <img src="https://img.freepik.com/premium-photo/poster-with-several-pictures-people-text-that-say-chunkie_1135095-15240.jpg?uid=R45245478&ga=GA1.1.950112764.1727327809&semt=ais_hybrid" height="400" alt="About Us Image" />
+                </div>
+            
+        </section>
+
+        <section id="featured-services">
+            <h2>Our Featured Services</h2>
+            <div class="service-grid" >
+                <div class="service-card" data-aos="fade">
+                    <h3>Digital Signage</h3>
+                    <img src="data:image/jpeg;base64,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" alt="Digital Signage">
+                    <p>Dynamic digital displays for modern advertising. Capture your audience's attention with vivid graphics and real-time content updates.</p>
+                </div>
+                <div class="service-card" data-aos="fade">
+                    <h3>LED Displays</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnhL1zoLFNbtRxKKXsJJYdQ5mmlKn7d8cTmg&s" alt="LED Displays">
+                    <p>High-quality, energy-efficient LED displays suitable for indoor and outdoor use, perfect for advertising and informational purposes.</p>
+                </div>
+                <div class="service-card" data-aos="fade">
+                    <h3>Outdoor Advertising</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE5O_A2yi9KBNB2qyFQM5bRXZCZfaxKpzKJA&s" alt="Outdoor Advertising">
+                    <p>Weather-resistant, durable, and visually appealing outdoor signs designed to stand out and draw attention to your brand.</p>
+                </div>
+                <div class="service-card" data-aos="fade">
+                    <h3>Interior Signage</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFfoWGuvsr7IpXHSsUHHcuQnoaPcSxt9iDMg&s" alt="Interior Signage">
+                    <p>Stylish and informative interior signs to guide customers and enhance the ambiance of your space, from directional signs to promotional displays.</p>
+                </div>     
+            </div>
+        </section>
+        <section id="gallary">
+            <h2>Gallary</h2>
+            <div class="grid">
+                <div class="img1">
+                    <img src="https://img.freepik.com/premium-photo/street-sign-direction-way-engaging-versus-staying-home_1308172-183384.jpg?uid=R45245478&ga=GA1.1.1281860228.1721425226&semt=ais_hybrid" alt="img" class="grid-image">
+                </div>
+                <div class="img2">
+                    <img src="https://img.freepik.com/premium-photo/community-band-concert-program-signage-mockup-with-blank-white-copy-space-placing-your-design_839035-1776883.jpg?uid=R45245478&ga=GA1.1.1281860228.1721425226&semt=ais_hybrid" alt="img" class="grid-image">
+                </div>
+                <div class="img3">
+                    <img src="https://images.pexels.com/photos/9973170/pexels-photo-9973170.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img" class="grid-image">
+                </div>
+                <div class="img4">
+                    <img src="https://images.pexels.com/photos/5211556/pexels-photo-5211556.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img" class="grid-image">
+                </div>
+                <div class="img5">
+                    <img src="https://img.freepik.com/premium-photo/blank-advertising-billboard_1337460-7784.jpg?uid=R45245478&ga=GA1.1.1281860228.1721425226&semt=ais_hybrid" alt="img" class="grid-image">
+                </div>
+                <div class="img6">
+                    <img src="https://img.freepik.com/premium-psd/billboard-mockup-sunset-sky_23-2147956921.jpg?uid=R45245478&ga=GA1.1.1281860228.1721425226&semt=ais_hybrid" alt="img" class="grid-image">
+                </div>
+                <div class="img7">
+                    <img src="https://images.pexels.com/photos/3260675/pexels-photo-3260675.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img" class="grid-image">
+                </div>
+                <div class="img8">
+                    <img src="https://images.pexels.com/photos/1858115/pexels-photo-1858115.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img" class="grid-image">
+                </div>
+                <div class="img9">
+                    <img src="https://images.pexels.com/photos/2763246/pexels-photo-2763246.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img" class="grid-image">
+                </div>
+            </div>
+        </section>
+
+<section class="our-team">
+    <h2>Meet Our Team</h2>
+    <div class="team-members">
+        <div class="member" data-aos="zoom-in">
+            <img src="https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg?uid=R45245478&ga=GA1.1.950112764.1727327809&semt=ais_hybrid" alt="Team Member">
+            <h3>Rajesh Verma</h3>
+            <p>CEO & Founder</p>
+        </div>
+        <div class="member" data-aos="zoom-in">
+            <img src="https://img.freepik.com/free-photo/portrait-woman-playing-poker-casino_23-2151831023.jpg?uid=R45245478&ga=GA1.1.950112764.1727327809&semt=ais_hybrid" alt="Team Member">
+            <h3>Anita Desai</h3>
+            <p>Marketing Director</p>
+        </div>
+        <div class="member" data-aos="zoom-in">
+            <img src="https://img.freepik.com/free-photo/person-job-male-college-men_1150-1779.jpg?uid=R45245478&ga=GA1.1.950112764.1727327809&semt=ais_hybrid" alt="Team Member">
+            <h3>Vikram Patel</h3>
+            <p>Team Lead</p>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial" data-aos="zoom-in">
+            <p>"Outstanding services! Highly recommend this company for all your signage needs."</p>
+            <h4>- Rakesh Sharma</h4>
+        </div>
+        <div class="testimonial" data-aos="zoom-in">
+            <p>"They truly care about their customers and provide top-quality signage solutions."</p>
+            <h4>- Meena Gupta</h4>
+        </div>
+        <div class="testimonial" data-aos="zoom-in">
+            <p>"I'm extremely impressed with their professionalism and expertise in the field."</p>
+            <h4>- Sunil Menon</h4>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>
+                    We are a leading signage solution provider, offering high-quality, custom-designed signage for businesses of all sizes. Our mission is to help brands create a strong presence with innovative and eye-catching signage solutions.
+                </p>
+            </div>
+            
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><strong>Address:</strong> 456, Shanti Nagar, MG Road, Bengaluru, Karnataka - 560001</p>
+                <p><strong>Phone:</strong> +91-9876543210</p>
+                <p><strong>Email:</strong> info@yourcompany.com</p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <p>Stay connected with us on social media:</p>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 SignifyPro. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()({
+      offset: 320,
+      duration: 3000
+    });
+    </script>
+    <script>
+        var preloader = document.getElementById("loading");
+function myFunction(){
+    preloader.style.display = 'none';
+}
+    </script>
+</body>
+</html>

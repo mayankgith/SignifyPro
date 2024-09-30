@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signage Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body onload="myFunction()">
+    <header>
+        <h2>SignifyPro</h2>
+        
+        <i class="fas fa-bars" id="bars"  onclick="shownavbar()"></i>
+        <i class="fa fa-times" id="close" onclick="hidenavbar()"></i>
+        <ul class="nav_container">
+            <li class="nav_items"><a class="nav_list_items" href="index.html">HOME</a></li>
+            <li class="nav_items"><a class="nav_list_items" href="services.html">SERVICES</a></li>
+            <li class="nav_items"><a class="nav_list_items" href="#">ABOUT</a></li>
+            <li class="nav_items"><a class="nav_list_items" href="contact.html">CONTACT</a></li>
+        </ul>
+        <button href="#" class="banner-button learn_more_btn">Learn More</button>
+    </header>
+    <main>
+        <div class="about_hero">
+            <h2>About Us</h2>
+        </div>
+
+
+        <section id="about_us" data-aos="fade-left">
+            <p class="about-description">
+                Welcome to SignifyPro, your trusted partner in high-quality signage solutions. With years of experience in the industry, we specialize in creating dynamic and eye-catching signage that helps businesses stand out. Our team of skilled designers and technicians is dedicated to delivering innovative, customized signage that perfectly reflects your brand's identity and message.
+            </p>
+            <p class="about-description">
+                From digital displays and LED signage to outdoor advertising and interior signs, we offer a wide range of services tailored to meet your specific needs. We believe in combining creativity, technology, and craftsmanship to produce signage that not only captures attention but also makes a lasting impression.
+            </p>
+            <p class="about-description">
+                At SignifyPro, we are committed to providing exceptional service, from the initial concept to installation. Our mission is to help you shine and connect with your audience through compelling and effective signage. Trust us to bring your vision to life and elevate your brand's visibility with stunning, professional signage solutions.
+            </p>
+        </section>
+
+        <section class="mission-vision">
+            <div class="content-card" data-aos="fade">
+                <i class="fas fa-bullseye"></i> <!-- Icon -->
+                <h2>Our Mission</h2>
+                <p>Our mission is to provide the best solutions for our customers by delivering quality products and services.</p>
+            </div>
+            <div class="content-card" data-aos="fade">
+                <i class="fas fa-eye"></i> <!-- Icon -->
+                <h2>Our Vision</h2>
+                <p>We envision a world where quality and trust are the foundations of every service we offer.</p>
+            </div>
+        </section>
+
+        <section class="journey-timeline">
+            <h2>Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade">
+                    <div class="timeline-icon">
+                        <i class="fas fa-flag-checkered"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>2010</h3>
+                        <p>Founded our company with a vision to innovate.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade">
+                    <div class="timeline-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>2015</h3>
+                        <p>Awarded as the best service provider in the industry.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>
+                    We are a leading signage solution provider, offering high-quality, custom-designed signage for businesses of all sizes. Our mission is to help brands create a strong presence with innovative and eye-catching signage solutions.
+                </p>
+            </div>
+            
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><strong>Address:</strong> 456, Shanti Nagar, MG Road, Bengaluru, Karnataka - 560001</p>
+                <p><strong>Phone:</strong> +91-9876543210</p>
+                <p><strong>Email:</strong> info@yourcompany.com</p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <p>Stay connected with us on social media:</p>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 SignifyPro. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        var preloader = document.getElementById("loading");
+function myFunction(){
+    preloader.style.display = 'none';
+}
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()({
+      offset: 320,
+      duration: 3000
+    });
+    </script>
+</body>
+</html>
